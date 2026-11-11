@@ -1,0 +1,16 @@
+package com.patment.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.patment.model.Payment;
+
+public class PaymentService {
+	
+	@Autowired
+	
+	Payment payment;
+	
+	public void doPayment() {
+		payment.pay();
+	}
+}

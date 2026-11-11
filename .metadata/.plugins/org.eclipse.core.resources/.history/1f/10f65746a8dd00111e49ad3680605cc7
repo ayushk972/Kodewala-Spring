@@ -1,0 +1,17 @@
+package com.tapqwik.service;
+
+import com.tapqwik.model.Payment;
+
+public class PaymentServie {
+	
+	private final Payment payment;
+	
+	public PaymentServie(Payment payment) {
+		this.payment = payment;
+	}
+	
+	public void placeOrder() {
+		System.out.println("Customer is placing order...");
+		payment.pay();
+	}
+}

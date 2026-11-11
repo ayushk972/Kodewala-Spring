@@ -1,0 +1,22 @@
+package com.tapqwik.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+import com.tapqwik.model.Payment;
+
+@Component
+public class RefundPaymentService {
+	private final Payment payment;
+	
+	@Autowired
+	public RefundPaymentService(@Qualifier("refund") Payment payment) {
+		this.payment = payment;
+	}
+	
+	public void refund() {
+		System.out.println("Refund is under Process..");
+		payment.pay();
+	}
+}

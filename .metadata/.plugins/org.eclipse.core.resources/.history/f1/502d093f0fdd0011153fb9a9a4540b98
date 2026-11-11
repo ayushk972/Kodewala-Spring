@@ -1,0 +1,5 @@
+package com.spring.scope.springcofig;
+
+public class SpringConfig {
+
+}

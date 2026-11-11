@@ -1,0 +1,5 @@
+package com.tapqwik.Config;
+
+public class SpringConfig {
+
+}

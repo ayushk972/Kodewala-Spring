@@ -1,0 +1,5 @@
+package com.patment.service;
+
+public class PaymentService {
+
+}

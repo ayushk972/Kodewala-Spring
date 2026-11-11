@@ -1,0 +1,13 @@
+package com.patment.model;
+
+public class Payment {
+	private String refId;
+	
+	public Payment(String refId) {
+		this.refId = refId;
+	}
+	
+	public void pay() {
+		System.out.println(refId + " is done");
+	}
+}

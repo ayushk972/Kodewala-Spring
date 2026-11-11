@@ -1,0 +1,18 @@
+package com.tapqwik.service;
+
+import org.springframework.beans.factory.annotation.Qualifier;
+
+import com.tapqwik.model.Payment;
+
+public class RefundPaymentService {
+	private final Payment payment;
+	
+	public RefundPaymentService(@Qualifier("refund") Payment payment) {
+		this.payment = payment;
+	}
+	
+	public void refund() {
+		System.out.println("Refund is under Process..");
+		payment.pay();
+	}
+}

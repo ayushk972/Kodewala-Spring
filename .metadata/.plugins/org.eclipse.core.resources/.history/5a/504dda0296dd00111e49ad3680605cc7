@@ -1,0 +1,5 @@
+package com.patment.model;
+
+public class Payment {
+
+}

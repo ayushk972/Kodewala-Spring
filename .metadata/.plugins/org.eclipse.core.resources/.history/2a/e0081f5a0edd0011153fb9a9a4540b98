@@ -1,0 +1,5 @@
+package com.spring.scope.model;
+
+public class payment {
+
+}

@@ -1,0 +1,19 @@
+package com.patment;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.patment.config.SpringConfig;
+import com.patment.model.Payment;
+import com.patment.service.PaymentService;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
+        ApplicationContext context = new AnnotationConfigApplicationContext(SpringConfig.class);
+        PaymentService pay = context.getBean(PaymentService.class);
+        pay.doPayment();
+    }
+}

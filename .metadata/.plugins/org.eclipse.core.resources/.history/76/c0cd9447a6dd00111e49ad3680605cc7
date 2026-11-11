@@ -1,0 +1,5 @@
+package com.tapqwik.model;
+
+public class CardPayment {
+
+}
