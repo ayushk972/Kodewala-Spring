@@ -1,0 +1,2 @@
+# End-to-End Console Demo Script
+# Placeholder for Sprint 1 & Sprint 2 demonstration steps.
